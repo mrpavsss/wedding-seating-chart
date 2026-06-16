@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  background: #f7f4ef;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 25px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.guest-card {
+  background: white;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.guest-card:hover {
+  transform: scale(1.02);
+}
+
+.table-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.table-number {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+}
