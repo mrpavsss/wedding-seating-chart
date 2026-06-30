@@ -1,7 +1,14 @@
 body {
   margin: 0;
   background: #f7f4ef;
+  color: #222;
   font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+p {
+  color:#222;
 }
 
 .container {
@@ -16,6 +23,16 @@ input {
   padding: 15px;
   font-size: 18px;
   box-sizing: border-box;
+
+  background: white;
+  color: #222;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input::placeholder {
+  color: #888;
 }
 
 .guest-card {

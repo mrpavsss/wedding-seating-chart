@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="container">
 
-      <h1>Pavly & Bride</h1>
+      <h1>Mr. & Mrs. Rizk</h1>
 
       <h2>Find Your Table</h2>
 
