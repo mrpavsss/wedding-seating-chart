@@ -1,65 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap');
+
+
+/* ==============================
+   COLOR PALETTE
+   ============================== */
+
+:root {
+  --ivory: #f8f5ef;
+  --cream: #fcfaf6;
+  --navy: #14263d;
+  --gold: #b28a45;
+  --gold-light: #c8a96b;
+  --text: #26384c;
+}
+
+
+/* ==============================
+   PAGE
+   ============================== */
+
 body {
   margin: 0;
-  background: #f7f4ef;
-  color: #222;
-  font-family: Arial, sans-serif;
+  background: var(--ivory);
+  color: var(--navy);
+  font-family: "Montserrat", sans-serif;
 }
 
-h1,
-h2,
-p {
-  color:#222;
+.page {
+  min-height: 100vh;
+  background: var(--ivory);
+  padding: 16px;
 }
+
+
+/* ==============================
+   GOLD DOUBLE BORDER
+   ============================== */
+
+.gold-border {
+  max-width: 850px;
+  margin: 0 auto;
+  min-height: calc(100vh - 32px);
+
+  border: 2px solid var(--gold);
+
+  padding: 7px;
+}
+
+.inner-border {
+  min-height: calc(100vh - 50px);
+
+  border: 1px solid var(--gold-light);
+
+  position: relative;
+}
+
+
+/* ==============================
+   MAIN CONTAINER
+   ============================== */
 
 .container {
-  max-width: 600px;
-  margin: auto;
-  padding: 25px;
+  max-width: 700px;
+  margin: 0 auto;
+
+  padding: 45px 30px 35px;
+
   text-align: center;
 }
 
-input {
-  width: 100%;
-  padding: 15px;
-  font-size: 18px;
-  box-sizing: border-box;
 
-  background: white;
-  color: #222;
+/* ==============================
+   LOGO
+   ============================== */
 
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 10px;
 }
 
-input::placeholder {
+.wedding-logo {
+  width: 190px;
+  max-width: 55vw;
+  height: auto;
+  display: block;
+}
+
+
+/* ==============================
+   COUPLE NAMES
+   ============================== */
+
+.couple-names {
+  margin: 5px 0 8px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 42px;
+  font-weight: 500;
+
+  letter-spacing: 5px;
+
+  color: var(--navy);
+}
+
+.couple-names span {
+  color: var(--gold);
+  font-weight: 400;
+  margin: 0 5px;
+}
+
+
+/* ==============================
+   SMALL DIVIDER
+   ============================== */
+
+.small-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 5px auto 12px;
+}
+
+.small-divider span {
+  width: 75px;
+  height: 1px;
+
+  background: var(--gold);
+}
+
+.diamond {
+  font-size: 11px;
+  color: var(--gold);
+}
+
+
+/* ==============================
+   DATE
+   ============================== */
+
+.wedding-date {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 15px;
+  font-weight: 400;
+
+  letter-spacing: 5px;
+
+  color: var(--navy);
+}
+
+
+/* ==============================
+   MAIN HEADING
+   ============================== */
+
+.find-seat {
+  margin: 55px 0 5px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 50px;
+  line-height: 1.1;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+
+  color: var(--navy);
+}
+
+
+/* ==============================
+   SCRIPT TEXT
+   ============================== */
+
+.script-text {
+  font-family: "Great Vibes", cursive;
+
+  font-size: 50px;
+
+  color: var(--gold);
+
+  margin-top: 3px;
+}
+
+
+/* ==============================
+   ORNAMENTAL DIVIDER
+   ============================== */
+
+.ornamental-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin: 8px auto 35px;
+}
+
+.ornamental-divider span {
+  height: 1px;
+  background: var(--gold-light);
+
+  width: 150px;
+
+  position: relative;
+}
+
+.ornamental-divider span:first-child::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  top: -4px;
+
+  width: 45px;
+  height: 1px;
+
+  background: var(--gold);
+}
+
+.ornamental-divider span:last-child::after {
+  content: "";
+  position: absolute;
+
+  right: 0;
+  top: -4px;
+
+  width: 45px;
+  height: 1px;
+
+  background: var(--gold);
+}
+
+.heart {
+  color: var(--gold);
+
+  font-size: 17px;
+}
+
+
+/* ==============================
+   SEARCH SECTION
+   ============================== */
+
+.search-section {
+  width: 100%;
+  max-width: 560px;
+
+  margin: 0 auto;
+}
+
+.search-instruction {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 24px;
+
+  margin: 0 0 15px;
+
+  color: var(--navy);
+}
+
+
+/* ==============================
+   SEARCH BOX
+   ============================== */
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 18px 20px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 16px;
+
+  text-align: center;
+
+  color: var(--navy);
+
+  background: #ffffff;
+
+  border: 1px solid var(--gold);
+
+  border-radius: 0;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.search-input::placeholder {
   color: #888;
+
+  opacity: 1;
+}
+
+.search-input:focus {
+  border-color: var(--gold);
+
+  box-shadow:
+    0 0 0 3px rgba(178, 138, 69, 0.12);
+}
+
+
+/* ==============================
+   SEARCH RESULTS
+   ============================== */
+
+.results {
+  margin-top: 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
 }
 
 .guest-card {
-  background: white;
-  margin-top: 10px;
-  padding: 15px;
-  border-radius: 10px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  padding: 15px 18px;
+
+  background: var(--cream);
+
+  border: 1px solid #ded5c5;
+
+  color: var(--navy);
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 15px;
+
   cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease;
 }
 
 .guest-card:hover {
-  transform: scale(1.02);
+  background: #ffffff;
+
+  border-color: var(--gold);
+
+  transform: translateY(-1px);
 }
 
+.arrow {
+  color: var(--gold);
+
+  font-size: 20px;
+}
+
+.no-results {
+  padding: 20px;
+
+  background: var(--cream);
+
+  border: 1px solid #ded5c5;
+
+  font-size: 14px;
+
+  color: #666;
+}
+
+.loading {
+  margin-top: 20px;
+
+  font-size: 14px;
+
+  color: #777;
+}
+
+
+/* ==============================
+   TABLE RESULT
+   ============================== */
+
 .table-card {
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
+  max-width: 500px;
+
+  margin: 0 auto;
+
+  padding: 35px 25px;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  border: 1px solid var(--gold-light);
+
+  text-align: center;
+}
+
+.welcome-text {
+  margin: 0 0 8px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 12px;
+
+  letter-spacing: 4px;
+
+  color: var(--gold);
+}
+
+.guest-name {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 36px;
+
+  font-weight: 500;
+
+  color: var(--navy);
+}
+
+.gold-divider {
+  width: 90px;
+
+  height: 1px;
+
+  margin: 18px auto;
+
+  background: var(--gold);
+}
+
+.your-table {
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 13px;
+
+  letter-spacing: 4px;
+
+  color: var(--navy);
 }
 
 .table-number {
-  font-size: 80px;
-  font-weight: bold;
-  margin: 20px 0;
+  margin: 10px 0 15px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 100px;
+
+  line-height: 1;
+
+  font-weight: 600;
+
+  color: var(--gold);
 }
 
-button {
-  padding: 12px 24px;
-  font-size: 18px;
+.enjoy-message {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 20px;
+
+  line-height: 1.4;
+
+  color: var(--navy);
+}
+
+
+/* ==============================
+   SEARCH AGAIN BUTTON
+   ============================== */
+
+.search-again {
+  margin-top: 15px;
+
+  padding: 12px 25px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  color: var(--navy);
+
+  background: transparent;
+
+  border: 1px solid var(--gold);
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.search-again:hover {
+  background: var(--gold);
+
+  color: white;
+}
+
+
+/* ==============================
+   BOTTOM DECORATION
+   ============================== */
+
+.bottom-decoration {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-top: 55px;
+
+  color: var(--gold);
+
+  font-size: 24px;
+}
+
+.bottom-decoration span:nth-child(2) {
+  font-size: 13px;
+}
+
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 600px) {
+
+  .page {
+    padding: 8px;
+  }
+
+  .gold-border {
+    min-height: calc(100vh - 16px);
+
+    padding: 5px;
+  }
+
+  .inner-border {
+    min-height: calc(100vh - 28px);
+  }
+
+  .container {
+    padding: 28px 18px 25px;
+  }
+
+  .wedding-logo {
+    width: 145px;
+  }
+
+  .couple-names {
+    font-size: 29px;
+
+    letter-spacing: 3px;
+  }
+
+  .wedding-date {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+  }
+
+  .find-seat {
+    margin-top: 40px;
+
+    font-size: 38px;
+
+    letter-spacing: 1px;
+  }
+
+  .script-text {
+    font-size: 39px;
+  }
+
+  .ornamental-divider {
+    margin-bottom: 28px;
+
+    gap: 8px;
+  }
+
+  .ornamental-divider span {
+    width: 75px;
+  }
+
+  .search-instruction {
+    font-size: 21px;
+  }
+
+  .search-input {
+    font-size: 16px;
+
+    padding: 17px 12px;
+  }
+
+  .guest-card {
+    padding: 14px;
+
+    font-size: 14px;
+  }
+
+  .table-card {
+    padding: 30px 18px;
+  }
+
+  .guest-name {
+    font-size: 31px;
+  }
+
+  .table-number {
+    font-size: 85px;
+  }
+
+  .bottom-decoration {
+    margin-top: 40px;
+  }
 }
