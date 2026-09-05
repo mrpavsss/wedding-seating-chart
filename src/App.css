@@ -1,45 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap');
 
 
-/* ==============================
+/* ==================================================
    COLOR PALETTE
-   ============================== */
+   ================================================== */
 
 :root {
   --ivory: #f8f5ef;
   --cream: #fcfaf6;
+
   --navy: #14263d;
+
   --gold: #b28a45;
   --gold-light: #c8a96b;
+
   --text: #26384c;
 }
 
 
-/* ==============================
+/* ==================================================
    PAGE
-   ============================== */
+   ================================================== */
 
 body {
   margin: 0;
+
   background: var(--ivory);
+
   color: var(--navy);
+
   font-family: "Montserrat", sans-serif;
 }
 
 .page {
   min-height: 100vh;
+
   background: var(--ivory);
+
   padding: 16px;
 }
 
 
-/* ==============================
+/* ==================================================
    GOLD DOUBLE BORDER
-   ============================== */
+   ================================================== */
 
 .gold-border {
   max-width: 850px;
+
   margin: 0 auto;
+
   min-height: calc(100vh - 32px);
 
   border: 2px solid var(--gold);
@@ -56,12 +66,13 @@ body {
 }
 
 
-/* ==============================
+/* ==================================================
    MAIN CONTAINER
-   ============================== */
+   ================================================== */
 
 .container {
   max-width: 700px;
+
   margin: 0 auto;
 
   padding: 45px 30px 35px;
@@ -70,13 +81,15 @@ body {
 }
 
 
-/* ==============================
+/* ==================================================
    LOGO
-   ============================== */
+   ================================================== */
 
 .logo-container {
   display: flex;
+
   justify-content: center;
+
   align-items: center;
 
   margin-bottom: 10px;
@@ -84,15 +97,18 @@ body {
 
 .wedding-logo {
   width: 190px;
+
   max-width: 55vw;
+
   height: auto;
+
   display: block;
 }
 
 
-/* ==============================
+/* ==================================================
    COUPLE NAMES
-   ============================== */
+   ================================================== */
 
 .couple-names {
   margin: 5px 0 8px;
@@ -100,6 +116,7 @@ body {
   font-family: "Cormorant Garamond", serif;
 
   font-size: 42px;
+
   font-weight: 500;
 
   letter-spacing: 5px;
@@ -109,18 +126,22 @@ body {
 
 .couple-names span {
   color: var(--gold);
+
   font-weight: 400;
+
   margin: 0 5px;
 }
 
 
-/* ==============================
+/* ==================================================
    SMALL DIVIDER
-   ============================== */
+   ================================================== */
 
 .small-divider {
   display: flex;
+
   justify-content: center;
+
   align-items: center;
 
   gap: 10px;
@@ -130,6 +151,7 @@ body {
 
 .small-divider span {
   width: 75px;
+
   height: 1px;
 
   background: var(--gold);
@@ -137,18 +159,20 @@ body {
 
 .diamond {
   font-size: 11px;
+
   color: var(--gold);
 }
 
 
-/* ==============================
-   DATE
-   ============================== */
+/* ==================================================
+   WEDDING DATE
+   ================================================== */
 
 .wedding-date {
   font-family: "Montserrat", sans-serif;
 
   font-size: 15px;
+
   font-weight: 400;
 
   letter-spacing: 5px;
@@ -157,9 +181,9 @@ body {
 }
 
 
-/* ==============================
+/* ==================================================
    MAIN HEADING
-   ============================== */
+   ================================================== */
 
 .find-seat {
   margin: 55px 0 5px;
@@ -167,6 +191,7 @@ body {
   font-family: "Cormorant Garamond", serif;
 
   font-size: 50px;
+
   line-height: 1.1;
 
   font-weight: 500;
@@ -177,9 +202,9 @@ body {
 }
 
 
-/* ==============================
+/* ==================================================
    SCRIPT TEXT
-   ============================== */
+   ================================================== */
 
 .script-text {
   font-family: "Great Vibes", cursive;
@@ -192,13 +217,15 @@ body {
 }
 
 
-/* ==============================
+/* ==================================================
    ORNAMENTAL DIVIDER
-   ============================== */
+   ================================================== */
 
 .ornamental-divider {
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   gap: 14px;
@@ -208,6 +235,7 @@ body {
 
 .ornamental-divider span {
   height: 1px;
+
   background: var(--gold-light);
 
   width: 150px;
@@ -217,12 +245,15 @@ body {
 
 .ornamental-divider span:first-child::before {
   content: "";
+
   position: absolute;
 
   left: 0;
+
   top: -4px;
 
   width: 45px;
+
   height: 1px;
 
   background: var(--gold);
@@ -230,12 +261,15 @@ body {
 
 .ornamental-divider span:last-child::after {
   content: "";
+
   position: absolute;
 
   right: 0;
+
   top: -4px;
 
   width: 45px;
+
   height: 1px;
 
   background: var(--gold);
@@ -248,12 +282,13 @@ body {
 }
 
 
-/* ==============================
+/* ==================================================
    SEARCH SECTION
-   ============================== */
+   ================================================== */
 
 .search-section {
   width: 100%;
+
   max-width: 560px;
 
   margin: 0 auto;
@@ -270,9 +305,9 @@ body {
 }
 
 
-/* ==============================
+/* ==================================================
    SEARCH BOX
-   ============================== */
+   ================================================== */
 
 .search-wrapper {
   position: relative;
@@ -293,7 +328,7 @@ body {
 
   color: var(--navy);
 
-  background: #ffffff;
+  background: white;
 
   border: 1px solid var(--gold);
 
@@ -320,14 +355,15 @@ body {
 }
 
 
-/* ==============================
+/* ==================================================
    SEARCH RESULTS
-   ============================== */
+   ================================================== */
 
 .results {
   margin-top: 12px;
 
   display: flex;
+
   flex-direction: column;
 
   gap: 8px;
@@ -337,7 +373,9 @@ body {
   width: 100%;
 
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
 
   box-sizing: border-box;
@@ -363,7 +401,7 @@ body {
 }
 
 .guest-card:hover {
-  background: #ffffff;
+  background: white;
 
   border-color: var(--gold);
 
@@ -397,9 +435,9 @@ body {
 }
 
 
-/* ==============================
+/* ==================================================
    TABLE RESULT
-   ============================== */
+   ================================================== */
 
 .table-card {
   max-width: 500px;
@@ -428,15 +466,17 @@ body {
 }
 
 .guest-name {
-  margin: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
 
   font-family: "Cormorant Garamond", serif;
 
-  font-size: 36px;
-
   font-weight: 500;
+  line-height: 1.1;
 
   color: var(--navy);
+  overflow-wrap: break-word;
 }
 
 .gold-divider {
@@ -486,9 +526,46 @@ body {
 }
 
 
-/* ==============================
+/* ==================================================
+   BALLROOM LAYOUT BUTTON
+   ================================================== */
+
+.layout-button {
+  display: block;
+
+  margin: 25px auto 10px;
+
+  padding: 11px 22px;
+
+  background: transparent;
+
+  border: 1px solid var(--gold);
+
+  color: var(--navy);
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.layout-button:hover {
+  background: var(--gold);
+
+  color: white;
+}
+
+
+/* ==================================================
    SEARCH AGAIN BUTTON
-   ============================== */
+   ================================================== */
 
 .search-again {
   margin-top: 15px;
@@ -519,9 +596,9 @@ body {
 }
 
 
-/* ==============================
+/* ==================================================
    BOTTOM DECORATION
-   ============================== */
+   ================================================== */
 
 .bottom-decoration {
   display: flex;
@@ -544,9 +621,171 @@ body {
 }
 
 
-/* ==============================
+/* ==================================================
+   BALLROOM LAYOUT OVERLAY
+   ================================================== */
+
+.layout-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1000;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+
+  background: rgba(20, 38, 61, 0.75);
+
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+
+  overflow-y: auto;
+}
+
+
+/* ==================================================
+   BALLROOM MODAL
+   ================================================== */
+
+.layout-modal {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 850px;
+
+  max-height: 92vh;
+
+  overflow-y: auto;
+
+  padding: 35px;
+
+  box-sizing: border-box;
+
+  background: var(--ivory);
+
+  border: 2px solid var(--gold);
+
+  box-shadow:
+    0 15px 50px rgba(0, 0, 0, 0.3);
+
+  text-align: center;
+}
+
+
+/* ==================================================
+   BALLROOM TITLE
+   ================================================== */
+
+.layout-title {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 32px;
+
+  font-weight: 500;
+
+  letter-spacing: 3px;
+
+  color: var(--navy);
+}
+
+
+/* ==================================================
+   BALLROOM DIVIDER
+   ================================================== */
+
+.layout-divider {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 12px auto 25px;
+
+  color: var(--gold);
+
+  font-size: 10px;
+}
+
+.layout-divider span {
+  width: 70px;
+
+  height: 1px;
+
+  background: var(--gold);
+}
+
+
+/* ==================================================
+   BALLROOM IMAGE
+   ================================================== */
+
+.ballroom-image {
+  display: block;
+
+  width: 100%;
+
+  max-width: 750px;
+
+  height: auto;
+
+  margin: 0 auto;
+
+  border: 1px solid var(--gold-light);
+
+  background: white;
+}
+
+
+/* ==================================================
+   CLOSE BUTTON
+   ================================================== */
+
+.close-layout {
+  position: absolute;
+
+  top: 10px;
+
+  right: 14px;
+
+  width: 36px;
+
+  height: 36px;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--navy);
+
+  font-size: 30px;
+
+  font-weight: 300;
+
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.close-layout:hover {
+  color: var(--gold);
+}
+
+
+/* ==================================================
    MOBILE
-   ============================== */
+   ================================================== */
 
 @media (max-width: 600px) {
 
@@ -637,4 +876,59 @@ body {
   .bottom-decoration {
     margin-top: 40px;
   }
+
+
+  /* Ballroom popup */
+
+  .layout-overlay {
+    padding: 10px;
+  }
+
+
+  .layout-modal {
+    max-height: 95vh;
+
+    padding: 28px 12px 15px;
+  }
+
+
+  .layout-title {
+    font-size: 25px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .layout-divider {
+    margin-bottom: 15px;
+  }
+
+
+  .layout-divider span {
+    width: 45px;
+  }
+
+
+  .close-layout {
+    top: 7px;
+
+    right: 8px;
+
+    font-size: 27px;
+  }
+
+
+  .ballroom-image {
+    width: 100%;
+  }
+
+
+  .layout-button {
+    margin-top: 20px;
+
+    font-size: 10px;
+
+    padding: 10px 16px;
+  }
+
 }
